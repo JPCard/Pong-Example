@@ -10,6 +10,14 @@ public class Ball : MonoBehaviour
     private float throwSpeed;
 
     private Rigidbody2D _rgBody2D;
+
+
+    public void Reset()
+    {
+        transform.position = Vector2.zero;
+        _rgBody2D.velocity = Vector2.zero;
+        StartCoroutine(InitialBallThrow());
+    }
     
     private void Awake()
     {

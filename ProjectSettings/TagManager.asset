@@ -12,11 +12,11 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
+  - PlayerCollision
+  - PlayerHitTrigger
+  - Ball
+  - Wall
+  - GoalZone
   - 
   - 
   - 

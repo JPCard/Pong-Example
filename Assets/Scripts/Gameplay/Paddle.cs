@@ -3,11 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public abstract class Paddle : MonoBehaviour
 {
-    private float yDir;
+    protected float yDir;
     private Rigidbody2D _rgBody2D;
 
+    [SerializeField] private float throwXDir = 1;
     [SerializeField]
     private float speed = 7;
     [SerializeField]
@@ -18,22 +19,7 @@ public class Player : MonoBehaviour
         _rgBody2D = gameObject.GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
-    private void Update()
-    {
-        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
-        {
-            yDir = -1;
-        }
-        else if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
-        {
-            yDir = 1;
-        }
-        else
-        {
-            yDir = 0;
-        }
-    }
+    
 
     private void FixedUpdate()
     {
@@ -42,7 +28,6 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        
         
         if (!col.CompareTag("Ball"))
         {
@@ -60,11 +45,11 @@ public class Player : MonoBehaviour
 
         if (auxBall.transform.position.y < transform.position.y)
         {
-            throwDir = new Vector2(1, 1);
+            throwDir = new Vector2(throwXDir, 1);
         }
         else
         {
-            throwDir = new Vector2(1, -1);
+            throwDir = new Vector2(throwXDir, -1);
         }
         
         auxBall.ThrowBall(throwDir * throwMagnitude);

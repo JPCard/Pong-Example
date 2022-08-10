@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &611166037307940463
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 655308930273372789, guid: a22e26173ac76fb409dca7f3b95dfc0d, type: 3}
+      propertyPath: m_Color.b
+      value: 0.3962264
+      objectReference: {fileID: 0}
+    - target: {fileID: 655308930273372789, guid: a22e26173ac76fb409dca7f3b95dfc0d, type: 3}
+      propertyPath: m_Color.g
+      value: 0.3962264
+      objectReference: {fileID: 0}
+    - target: {fileID: 655308930273372789, guid: a22e26173ac76fb409dca7f3b95dfc0d, type: 3}
+      propertyPath: m_Color.r
+      value: 0.3962264
+      objectReference: {fileID: 0}
+    - target: {fileID: 655308931121250483, guid: a22e26173ac76fb409dca7f3b95dfc0d, type: 3}
+      propertyPath: m_Size.x
+      value: 1.2885957
+      objectReference: {fileID: 0}
+    - target: {fileID: 655308931121250486, guid: a22e26173ac76fb409dca7f3b95dfc0d, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 655308931121250486, guid: a22e26173ac76fb409dca7f3b95dfc0d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 655308931121250486, guid: a22e26173ac76fb409dca7f3b95dfc0d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 655308931121250486, guid: a22e26173ac76fb409dca7f3b95dfc0d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 655308931121250486, guid: a22e26173ac76fb409dca7f3b95dfc0d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 655308931121250486, guid: a22e26173ac76fb409dca7f3b95dfc0d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 655308931121250486, guid: a22e26173ac76fb409dca7f3b95dfc0d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 655308931121250486, guid: a22e26173ac76fb409dca7f3b95dfc0d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 655308931121250486, guid: a22e26173ac76fb409dca7f3b95dfc0d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 655308931121250486, guid: a22e26173ac76fb409dca7f3b95dfc0d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 655308931121250486, guid: a22e26173ac76fb409dca7f3b95dfc0d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 655308931121250487, guid: a22e26173ac76fb409dca7f3b95dfc0d, type: 3}
+      propertyPath: m_Name
+      value: EnemyPaddle
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5942073887076174746, guid: a22e26173ac76fb409dca7f3b95dfc0d, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: a22e26173ac76fb409dca7f3b95dfc0d, type: 3}
+--- !u!1 &100042664117427928 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 655308931121250487, guid: a22e26173ac76fb409dca7f3b95dfc0d, type: 3}
+  m_PrefabInstance: {fileID: 611166037307940463}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6526413080408348171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100042664117427928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e3cdc8b735c598478a729a9e4f46d25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  throwXDir: -1
+  speed: 7
+  throwMagnitude: 100
+  ballTransform: {fileID: 0}
+  maxSeekSqrDistance: 6
